@@ -39,8 +39,8 @@
 /* Begin PBXFileReference section */
 		1D1A1DA0D1D4ED282A970030 /* Pods_MyCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E278611D3083793856F257D /* Pods-MyCategory_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCategory_Example.debug.xcconfig"; path = "Target Support Files/Pods-MyCategory_Example/Pods-MyCategory_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4630119A6622F066F3FE5DE2 /* MyCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MyCategory.podspec; path = ../MyCategory.podspec; sourceTree = "<group>"; };
-		5A0E946934DD2B90C74A6EFD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4630119A6622F066F3FE5DE2 /* MyCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MyCategory.podspec; path = ../MyCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5A0E946934DD2B90C74A6EFD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MyCategory_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCategory_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		904F1A1B541DABE0EAC1C002 /* Pods-MyCategory_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCategory_Tests.release.xcconfig"; path = "Target Support Files/Pods-MyCategory_Tests/Pods-MyCategory_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A4F1777B6E37B1791CB2DFF8 /* Pods-MyCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCategory_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MyCategory_Tests/Pods-MyCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		ACE0B776BDC1F9DB84B9C33F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ACE0B776BDC1F9DB84B9C33F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				A4F1777B6E37B1791CB2DFF8 /* Pods-MyCategory_Tests.debug.xcconfig */,
 				904F1A1B541DABE0EAC1C002 /* Pods-MyCategory_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -365,10 +364,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MyCategory_Example/Pods-MyCategory_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/MyCategory/MyCategory.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MyCategory.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
